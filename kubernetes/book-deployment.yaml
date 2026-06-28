@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: book-deployment
+  labels:
+    app: book
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: book
+  template:
+    metadata:
+      labels:
+        app: book
+    spec:
+      containers:
+        - name: book-container
+          image: will/be:updated
+          ports:
+            - containerPort: 5002
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: book-service
+spec:
+  selector:
+    app: book
+  ports:
+    - protocol: TCP
+      port: 5002
+      targetPort: 5002
+  type: ClusterIP
