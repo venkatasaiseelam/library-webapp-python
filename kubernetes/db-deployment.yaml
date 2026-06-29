@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: db-container
-          image: devops1117/library:db-v6ae5f9e
+          image: devops1117/library:db-v9c0151d
           ports:
             - containerPort: 3306
 

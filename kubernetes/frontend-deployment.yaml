@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: devops1117/library:frontend-v6ae5f9e
+          image: devops1117/library:frontend-v9c0151d
           ports:
             - containerPort: 5000
 
