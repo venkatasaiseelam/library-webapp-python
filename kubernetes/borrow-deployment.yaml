@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: borrow-container
-          image: devops1117/library:borrow-v9c0151d
+          image: devops1117/library:borrow-v958dd85
           ports:
             - containerPort: 5003
 
