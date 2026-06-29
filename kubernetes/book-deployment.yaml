@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: book-container
-          image: will/be:updated
+          image: devops1117/library:book-v6ae5f9e
           ports:
             - containerPort: 5002
 

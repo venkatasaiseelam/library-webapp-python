@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: will/be:updated
+          image: devops1117/library:auth-v6ae5f9e
           ports:
             - containerPort: 5001
   
